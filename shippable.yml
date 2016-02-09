@@ -5,14 +5,10 @@ rvm:
 
 gemfile:
    - gemfiles/Gemfile
-   - gemfiles/newGemFile
 
 env:
   global:
     - FOO=BAR
-  matrix:
-    - m1=ONE
-    - m2=TWO
 build:
   pre_ci_boot:
     image_name: drydock/u14ruball
