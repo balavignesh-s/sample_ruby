@@ -2,8 +2,9 @@ build_image: drydock/u14rub:prod
 language: ruby
 rvm:
   - 1.9.3
-gemfile:
-  - gemfile/gemFile
+env:
+  matrix:
+    - m1=one
 build:
   pre_ci_boot:
     image_name: drydock/u14ruball
