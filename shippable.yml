@@ -8,8 +8,11 @@ gemfile:
    - gemfiles/newGemFile
 
 env:
-  - FOO=BAR
-
+  global:
+    - FOO=BAR
+  matrix:
+    - m1=ONE
+    - m2=TWO
 build:
   pre_ci_boot:
     image_name: drydock/u14ruball
