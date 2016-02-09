@@ -1,4 +1,4 @@
-build_image: u14rub:prod
+build_image: drydock/u14rub:prod
 language: ruby
 rvm:
   - 1.9.3
