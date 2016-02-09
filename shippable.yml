@@ -5,6 +5,7 @@ rvm:
 
 gemfile:
    - gemfiles/Gemfile
+   - gemfiles/newGemFile
 
 env:
   - FOO=BAR
