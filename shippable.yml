@@ -2,6 +2,12 @@ build_image: drydock/u14rub:prod
 language: ruby
 rvm:
   - 1.9.3
+env:
+  global:
+    - M1=one
+  matrix:
+    - M2=TWo
+    - M3=Three
 build:
   pre_ci_boot:
     image_name: drydock/u14ruball
